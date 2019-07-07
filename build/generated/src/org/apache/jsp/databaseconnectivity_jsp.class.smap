@@ -1,0 +1,16 @@
+SMAP
+databaseconnectivity_jsp.java
+JSP
+*S JSP
+*F
++ 0 databaseconnectivity.jsp
+databaseconnectivity.jsp
+*L
+5,15:48
+20,15:64
+34:79
+35,3:80,3
+38:89
+39,8:91
+46,4:99
+*E

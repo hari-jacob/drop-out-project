@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE students[
+<!ELEMENT students (students)>
+<!ELEMENT student (name,id,per)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT per (#PCDATA)>]
+>
+
+<students>
+<student>
+    <name>vijay</name>
+    <id>111</id>
+    <per>50</per>
+</student>    
+<student>
+    <name>Hari</name>
+    <id>112</id>
+    <per>70</per>
+</student>    
+<student>
+    <name>Kumar</name>
+    <id>113</id>
+    <per>40</per>
+</student>    
+<student>
+    <name>Binge</name>
+    <id>114</id>
+    <per>70</per>
+</student>    
+</students>    
+

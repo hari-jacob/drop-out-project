@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html{
+    
+background: url("background1.jpg") no-repeat center center fixed; webkit-background-size: cover;o-background-size: cover; background-size: cover;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
+body {
+    font-family: chiller,viner hand itc;
+    font-size: 30px;
+
+}
+p{
+    color:white;
+}
+h2{
+    font-family: colonna mt,cooper,gill sans,viner hand itc;
+    color:black;
+    text-shadow: -2px 0 white,0 2px white,2px 0 white, 0 -2px white;
+    width:50px;
+    height:50px;
+    border-radius: 30%;
+    background-color: white;
+}
+
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#f5fffa;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    opacity:.9;
+    border:2px solid buttonshadow;
+    border-radius:15px;
+}
+
+li {
+    float: right;
+}
+
+li a{
+    display: block;
+    background-color:#fffafa;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a{
+    display: block;
+    background-color:#fffafa;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius:15px;
+    text-decoration: none;
+}
+a:hover {
+    cursor:pointer;
+    color:#fffafa;
+    font-weight:none;
+    background-color:black;
+}
+
+li a:hover {
+    cursor:pointer;
+    color:#fffafa;
+    font-weight:none;
+    background-color:black;
+}
+
+
+
+
+form
+{
+/*background:url("Winter-is-Coming-Game-of-Thrones-Background.jpg") no-repeat center center fixed; webkit-background-size: cover;o-background-size: cover; background-size: cover;*/
+border-radius:15px;
+background-color: #333;
+opacity: .85;
+
+}
+
+.style{
+    font-family:viner hand itc;
+}
+label{
+    color:#D4AF37;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    color:white;
+    background-color: black;
+    padding: 15px 20px;
+    margin: 8px 0;
+    opacity:.899;
+    display:inline-block;
+    border: 1.5px solid white;
+    box-sizing: border-box;
+    border-radius:15px;
+}	
+
+/* Set a style for all buttons */
+button {
+    background-color: black;
+    font-family: vine hand itc;
+    color:white;
+    padding: 12px 20px;
+    margin: 0px 0;
+    border-radius:5px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    width: auto;
+}
+
+.image{
+    text-align:center;
+    margin: 24px 0 12px 0;
+    position: fixed;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align:center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.i{
+    background:url("Winter-is-Coming-Game-of-Thrones-Background.jpg") no-repeat center center fixed; webkit-background-size: cover;o-background-size: cover; background-size: cover;
+}
+
+img.av {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+img.avatar {
+    width:100%;
+    position: static;
+    
+    
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: static;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+}
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: progress;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.8s;
+    animation: animatezoom 0.8s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       float: right;
+       width: 100%;
+    }
+    
+    
+
+
+    
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h2>DROPout</h2>
+  <p>Purchase Here. Read Anywhere.</p>
+</div>
+<div id="actul">
+<ul>
+ <li><a onclick="document.getElementById('id01signin').style.display='block'" style="width:auto;">Sign-In</a></li>
+<li><a  onclick="document.getElementById('id02login').style.display='block'" style="width:auto;">Log-In</a></li>  
+<li style="float:left "><a href="#contact">Home</a></li>
+</ul>
+
+
+
+<div id="id01signin" class="modal">
+    
+    <form name="sign" class=" modal-content animate img" style="width:500px" action="newadd.jsp" onsubmit="return pvalidate()">
+    <div class="imgcontainer">
+        <span onclick="document.getElementById('id01signin').style.display='none'" class="close" style="color:black" title="Close Modal">&times;</span>
+     <!--<img src="Winter-is-Coming-Game-of-Thrones-Background.jpg" alt="Avatar" class="avatar">-->
+    </div>
+     
+      <div class="container">
+          <h3>Create ur Account</h3>
+    <div></div>
+    <input class="style" type="text" placeholder="Enter Username" name="uname" required>
+
+   <div></div>
+      <input class="style" type="text" placeholder="Enter Email Address" name="mail" required>
+
+   <div></div>
+      <input class="style" type="text" placeholder="Enter Phone Number" name="ph" required>
+
+   <div></div>  
+      <input class="style" type="password" placeholder="Enter Password" name="psw" required>
+
+   <div></div>  
+      <input class="style" type="password" placeholder="Enter Password" name="cpsw" required>
+      
+   <div><label> <input type="checkbox" checked="checked" name="agree" title="Agree to the terms and conditins" required> I agree</label></div>
+      
+   <button type="submit"><b>CREATE</b></button>
+      
+    <!--<div class="container" style="float:right">-->
+      <button onclick="document.getElementById('id01signin').style.display='none'" style="float:right" ><b>CANCEL?</b></button>
+    <!--</div>-->
+    </div>
+
+        <a  onclick="document.getElementById('id01signin').style.display='none',document.getElementById('id02login').style.display='block'">Already Have An Account?</a>
+           
+  </form>
+</div>
+<script type="text/javascript">
+
+var modal = document.getElementById('id01signin');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+function pvalidate()
+{
+var pw=document.forms["sign"]["psw"].value;
+var cpw=document.forms["sign"]["cpsw"].value;
+if(pw!=cpw)
+	{
+	prompt("Password Entered Are not the SAME!");
+	return false;
+	}
+}
+</script>
+
+
+
+
+
+<div id="id02login" class="modal">
+  
+
+ <form name="log" class="modal-content animate"  style="width: 400px" action="logvali.jsp">
+     <div class="imgcontainer">
+     <span onclick="document.getElementById('id02login').style.display='none'" class="close" title="Close Modal">&times;</span>
+     <img src="Winter-is-Coming-Game-of-Thrones-Background.jpg" alt="Avatar" class="avatar">
+    </div>
+     
+    <div class="container">
+    <div></div>
+    <input class="style" type="text" placeholder="Enter Username" name="uname" required>
+     
+    <div></div>  
+      <input class="style" type="password" placeholder="Enter Password" name="psw" required>
+     
+    <div  class="container" style="border-radius:20px" >
+    <div class="container" style="padding:0px">
+      <button type="submit" onclick="pvalidate()"><label><b>LOGIN</b></label></button>
+    </div>
+    </div>  
+      
+      
+    </div>
+
+    
+<script>
+// Get the modal
+var modal = document.getElementById('id02login');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>                
+  </form>
+</div>
+
+<div class="container">
+<div class="content">
+
+<h3> Book Which u need - Login To Continue</h3>
+</div>
+</div>
+<div class="clearfix"></div>
+<p>Purchase here <strong>EBooks which u cant get anywhere</strong>.</p>
+<p>The  DropOut  is  a  series  of  e-readers  designed  and  marketed by Drop.
+Dropout devices enable users to browse, buy, download, and read e-books,
+newspapers, magazines </p><p>and other digital media via wireless networking to the Kindle Store. The hardware platform, developed by Drop subsidiary Lab126,</p><p> began as a single device in 2007 and now comprises a range of devices, including e-readers with E Ink</p><p> electronic paper displays and Dropout applications on all major computing platforms.</p><p> All Dropout devices integrate with Dropout Store content, and as of March 2018, the store has over million e-books available in the store.</p>
+</div>
+</body>
+</html>
